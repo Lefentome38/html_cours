@@ -7,17 +7,44 @@
 </head>
 <body>
 
-<h1>rollers</h1>
-<p> <i>Le roller est un sport de glisse qui se pratique avec des patins à roulettes.</i></p>
+<h1>ROLLERS</h1>
+<p class="titre">Le roller est un sport de glisse qui se pratique avec des patins à roulettes.</p>
 
-<main>
-    <img class="roller1" src="" alt="image de roller1">
-    <img class="roller2" src="" alt="image de roller2">
-</main>
+    <a href="https://cdn.pixabay.com/photo/2014/08/11/08/56/roller-skates-415389_640.jpg" alt="image de roller1">
+        <img class="rollertop" src="https://cdn.pixabay.com/photo/2014/08/11/08/56/roller-skates-415389_640.jpg" alt="image de roller1">
+    </a>
+    <a href="https://cdn.pixabay.com/photo/2018/08/08/00/09/inline-skates-3591101_640.jpg">
+        <img class="rollercool" src="https://cdn.pixabay.com/photo/2018/08/08/00/09/inline-skates-3591101_640.jpg" alt="image de roller2">
+    </a>
 
-<section>
-    <ul></ul>
-</section>
+<div class="container">
+
+        <div class="liste1">
+            <p>Qu'est ce que le roller</p>
+            <ul>
+                <li>- Le roller est un sport de glisse qui se pratique avec des patins à roulettes.</li>
+                <li>- Le roller c'est cool</li>
+                <li> - Le roller c'est dangereux</li>
+            </ul>
+        </div>
+
+        <div class="liste2">
+            <p>Les différents types de roller</p>
+            <ol>
+                <li><p class="l2">Le <b>roller</b> de vitesse</p></li>
+                <li><p class="l2">le <b>roller</b> de descente</p></li>
+                <li><p class="l2">Le <b>roller</b> de freestyle</p></li>
+                <li><p class="l2">Le <b>roller</b> de hockey</p></li>
+                <li><p class="l2">Le <b>roller</b> de randonnée</p></li>
+                <li><p class="l2">Le <b>roller</b> de slalom</p></li>
+                <li><p class="l2">Le <b>roller</b> de street</p></li>
+                <li><p class="l2">Le <b>roller</b> de course</p></li>
+            </ol>
+        </div>
+
+</div>
+
+
 
 
 
@@ -32,21 +59,63 @@
 
 <style>
 
-    h1{ width: 80%;}
+    body{}
 
-    .roller1{}
-    .roller2{justify-content: center;}
+    h1{
+        text-decoration: underline;
+        text-align: center;
+    }
 
+    .titre{
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    .rollertop{ 
+        max-width : 50%;
+
+    }
+    .rollercool{
+        max-width : 30%;
+        margin-left: 15%;
+    }
+
+
+
+    .container{
+        justify-content: center;
+        border: solid red;
+        display: flex;
+        width: 60%;
+        margin: auto;
+    }
+
+
+    .liste1{
+        text-align: center;
+        width: 40%;
+        border: 2px green ;  
+    }
+
+    .liste2{
+        text-align: center;
+        width: 40%;
+        border-left: dashed black;
+    }
+    .l2 {
+        color: purple;
+    }
 
 </style>
 
 <!-- 
     1. rollers
-    - width: 80%
+    - width: 80% OK
 
-    - titre principale sous-ligné : Les rollers
+    - titre principale sous-ligné : Les rollers OK
 
-    - sous-titre en italique : Le roller est un sport de glisse qui se pratique avec des patins à roulettes.
+    - sous-titre en italique : Le roller est un sport de glisse qui se pratique avec des patins à roulettes. OK
 
     - images avec un pointeur de la souris en forme de main quand on passe dessus
         - image 50% : https://www.rollerenligne.com/wp-content/uploads/2019/05/roller-quad.jpg
@@ -59,7 +128,7 @@
             - Le roller c'est cool
             - Le roller c'est dangereux
 
-        - liste 2 numérotée avec espacement de 10px et texte en violet : Les différents types de roller
+        - liste 2 numérotée avec espacement de 10px et texte en violet : Les différents types de roller OK
             - Le roller de vitesse
             - Le roller de descente
             - Le roller de freestyle
